@@ -4,7 +4,7 @@
 
 ### Data Science 
 
-[Project 1: Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
+Project 1: [Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
