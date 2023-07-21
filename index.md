@@ -17,9 +17,9 @@
 
 ---
 
-### Category Name 2
+### Course Projects
 
-- [Project 1 Title](http://example.com/)
+- [Tableau Projects]([http://example.com/](https://public.tableau.com/app/profile/oluwafemi.olawale)
 - [Project 2 Title](http://example.com/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
