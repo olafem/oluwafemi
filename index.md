@@ -2,13 +2,13 @@
 
 ---
 
-### Category Name 1 
+### Data Science 
 
-[Project 1 Title](/sample_page)
+[Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[SpaceX Capstone Project](/SpaceX Capstone Project.pdf)
+[SpaceX Capstone Project](/SpaceX Capstone Project_Femi.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
