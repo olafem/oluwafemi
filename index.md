@@ -8,7 +8,7 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 2: SpaceX Capstone Project](/SpaceX Capstone Project_Femi.pdf)
+Project 2: [SpaceX Capstone Project](/SpaceX Capstone Project_Femi.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
