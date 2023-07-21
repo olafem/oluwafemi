@@ -20,7 +20,7 @@
 ### Course Projects
 
 - [Tableau Projects](https://public.tableau.com/app/profile/oluwafemi.olawale)
-- [Project 2 Title](http://example.com/)
+- [Power BI Projects](https://app.powerbi.com/links/VdutdIRLLy?ctid=4a1e5cee-f43e-451d-b150-1486f954ef55&pbi_source=linkShare)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
 - [Project 5 Title](http://example.com/)
@@ -29,7 +29,3 @@
 
 
 
-
----
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<!-- Remove above link if you don't want to attibute -->
