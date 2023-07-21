@@ -4,11 +4,11 @@
 
 ### Data Science 
 
-[Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
+[Project 1: Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[SpaceX Capstone Project](/SpaceX Capstone Project_Femi.pdf)
+[Project 2: SpaceX Capstone Project](/SpaceX Capstone Project_Femi.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
