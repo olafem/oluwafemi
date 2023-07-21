@@ -1,10 +1,16 @@
-## Developer Portfolio Landing Page Template
+## Femi's Portfolio
 
-### Introduction
+### [Project 1: Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
 
-Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
+Overview 
+- Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
 
 <img src="images/demo.gif?raw=true"/>
+
+### [Project 2: SpaceX Capstone Project](/SpaceX Capstone Project_Femi.pdf)
+
+Overview 
+- Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
 
 ### Installation
 
