@@ -4,7 +4,7 @@
 
 ### Data Science 
 
-Project 1: [Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
+Project 1: [Predictive Modeling of THC Values based on CBN Results for Distillates](https://www.kaggle.com/code/femiolawale/distillate-potency-prediction?scriptVersionId=145139556)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
