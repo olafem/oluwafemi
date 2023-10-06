@@ -7,7 +7,7 @@ Overview
 
 <img src="images/demo.gif?raw=true"/>
 
-### Project 2: [SpaceX Capstone Project](SpaceX Capstone Project_Femi.pdf)
+### Project 2: [SpaceX Capstone Project](/oluwafemi/SpaceX%20Capstone%20Project_Femi.pdf)
 
 Overview 
 - Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
