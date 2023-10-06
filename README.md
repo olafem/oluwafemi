@@ -1,6 +1,6 @@
 ## Femi's Portfolio
 
-### [Project 1: Predictive Modeling of THC Values based on CBN Results for Distillates](/sample_page)
+### [Project 1: Predictive Modeling of THC Values based on CBN Results for Distillates](https://www.kaggle.com/code/femiolawale/distillate-potency-prediction?scriptVersionId=145139556)
 
 Overview 
 - Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
