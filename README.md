@@ -12,7 +12,7 @@ Overview
 Overview 
 - The objective of this project is to predict the successful landing of the first stage in SpaceX Falcon 9 rocket launches, a crucial factor impacting launch cost. Key variables including payload mass, orbit type, booster type, and launch site were assessed for their influence on landing success. Additionally, we examined the geographical factors, such as proximity to coastlines, cities, and the equator, as potential indicators of success. Our predictive analysis reveals a remarkable 94% certainty in the successful landing of the Falcon 9 first stage. To enhance these odds, further optimization and fine-tuning of essential parameters, such as booster type and payload mass, should be considered.
 
-### Project 2: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://www.kaggle.com/code/femiolawale/global-sustainable-energy?scriptVersionId=146179838))
+### Project 2: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://www.kaggle.com/code/femiolawale/global-sustainable-energy?scriptVersionId=146179838)
 
 Overview 
 - Our project delves into two decades of comprehensive data to understand and predict the future of sustainable energy. We've successfully developed models to forecast energy consumption, while also classifying countries into low, medium, and high access to electricity categories. These insights are instrumental in shaping global sustainability strategies and driving policy decisions and investments.
