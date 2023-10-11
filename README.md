@@ -20,6 +20,6 @@ Overview
 - Our project delves into two decades of comprehensive data to understand and predict the future of sustainable energy. We've successfully developed models to forecast energy consumption, while also classifying countries into low, medium, and high access to electricity categories. These insights are instrumental in shaping global sustainability strategies and driving policy decisions and investments.
 With a keen eye on Sustainable Development Goal 7, we've contributed to the mission of universal, reliable, and affordable energy access. Our project not only aids in guiding sustainable investments but also offers a foundation for assessing energy equity and efficiency. As the world leans towards a cleaner and more equitable energy landscape, our project opens doors to a brighter, more sustainable future for all.
 
-<img src="Sustainable_energy.png"/>
+<img src="images/Sustainable_energy.png"/>
 
 
