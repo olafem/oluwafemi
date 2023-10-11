@@ -13,7 +13,7 @@ Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluw
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-Project 1: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://www.kaggle.com/code/femiolawale/global-sustainable-energy?scriptVersionId=146179838)
+Project 3: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://www.kaggle.com/code/femiolawale/global-sustainable-energy?scriptVersionId=146179838)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
