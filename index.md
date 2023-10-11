@@ -10,11 +10,11 @@ Project 1: [Predictive Modeling of THC Values based on CBN Results for Distillat
 ---
 Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluwafemi/blob/master/SpaceX%20Capstone%20Project_Femi.pdf)
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="Space_race.png"/>
 
 ---
 Project 3: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://www.kaggle.com/code/femiolawale/global-sustainable-energy?scriptVersionId=146179838)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="Sustainable_energy.png"/>
 
 ---
 
