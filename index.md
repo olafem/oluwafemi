@@ -13,7 +13,7 @@ Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluw
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
+Project 1: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://www.kaggle.com/code/femiolawale/global-sustainable-energy?scriptVersionId=146179838)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
@@ -22,9 +22,6 @@ Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluw
 
 - [Tableau Projects](https://public.tableau.com/app/profile/oluwafemi.olawale)
 - [Power BI Projects](https://app.powerbi.com/links/VdutdIRLLy?ctid=4a1e5cee-f43e-451d-b150-1486f954ef55&pbi_source=linkShare)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
 
 ---
 
