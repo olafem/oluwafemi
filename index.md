@@ -5,7 +5,7 @@
 ### Data Science 
 
 Project 1: [Predictive Modeling of THC Values based on CBN Results for Distillates](https://www.kaggle.com/code/femiolawale/distillate-potency-prediction?scriptVersionId=145139556)
-<img src="[images/dummy_thumbnail.jpg?raw=true"](https://1drv.ms/i/s!Aoe_oG97eF-Fj4YJ4rJqbdkWz7hnug?e=gyfSGV)/>
+<img src="https://1drv.ms/i/s!Aoe_oG97eF-Fj4YJ4rJqbdkWz7hnug?e=gyfSGV"/>
 
 ---
 Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluwafemi/blob/master/SpaceX%20Capstone%20Project_Femi.pdf)
