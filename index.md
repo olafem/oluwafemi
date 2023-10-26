@@ -20,13 +20,10 @@ Project 3: [Empowering the Future: Navigating Global Sustainability with Data-Dr
 <img src="images/Sustainable_energy.png"/>
 
 ---
-
 ### Course Projects
-
 - [Customer Behaviour Analysis with SQL and Tableau](https://public.tableau.com/views/CustomerBehaviourAnalysiswithSQLandTableau/Overview?:language=en-US&:display_count=n&:origin=viz_share_link)
 - [Tableau Projects](https://public.tableau.com/app/profile/oluwafemi.olawale)
 - [Power BI Project](https://app.powerbi.com/links/VdutdIRLLy?ctid=4a1e5cee-f43e-451d-b150-1486f954ef55&pbi_source=linkShare)
-
 
 ---
 
