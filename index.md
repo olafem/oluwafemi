@@ -5,6 +5,7 @@
 ### Data Science 
 
 Project 1: [Predictive Modeling of THC Values Based on CBN Results for Distillates](https://github.com/olafem/oluwafemi/blob/c32429bb402554680e5c26cda5d8d1f7cf74e2c7/distillate-potency-prediction%20(2).ipynb)
+[Kaggle link here](https://www.kaggle.com/code/femiolawale/distillate-potency-prediction?scriptVersionId=145139556)
 <img src="images/potency_modelling.png"/>
 
 ---
@@ -13,6 +14,7 @@ Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluw
 
 ---
 Project 3: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://github.com/olafem/oluwafemi/blob/90815506df26058b31007e901f986a0025c7e2a4/global-sustainable-energy%20(1).ipynb)
+[Kaggle link here](https://www.kaggle.com/code/femiolawale/global-sustainable-energy)
 <img src="images/Sustainable_energy.png"/>
 
 ---
