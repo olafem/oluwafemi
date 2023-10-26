@@ -4,7 +4,7 @@
 
 ### Data Science 
 
-Project 1: [Predictive Modeling of THC Values Based on CBN Results for Distillates](distillate-potency-prediction (2).ipynb)
+Project 1: [Predictive Modeling of THC Values Based on CBN Results for Distillates](https://github.com/olafem/oluwafemi/blob/c32429bb402554680e5c26cda5d8d1f7cf74e2c7/distillate-potency-prediction%20(2).ipynb)
 <img src="images/potency_modelling.png"/>
 
 ---
