@@ -8,7 +8,7 @@ Project 1: [Predictive Modeling of THC Values Based on CBN Results for Distillat
 <img src="images/potency_modelling.png"/>
 
 ---
-Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluwafemi/blob/master/SpaceX%20Capstone%20Project_Femi.pdf)
+Project 2: [Winning Space Race with Data Science](pdf/SpaceX Capstone Project_Femi.pdf)
 <img src="images/Space_race.png"/>
 
 ---
