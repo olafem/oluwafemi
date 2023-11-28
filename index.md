@@ -17,10 +17,10 @@ Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluw
 Project 3: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://github.com/olafem/oluwafemi/blob/90815506df26058b31007e901f986a0025c7e2a4/global-sustainable-energy%20(1).ipynb)
 
 [Kaggle link here](https://www.kaggle.com/code/femiolawale/global-sustainable-energy)
-<img src="images/Sustainable_energy.png"/>
+<img src="images/99q98owg.png"/>
 
 ---
-### Project 4: [Toronto Raptors Performance vs Major Rival](https://github.com/olafem/oluwafemi/blob/b6a537dbc044e20baac612acf0429bba59c3fb01/NBA%20Team%20Performance.ipynb)
+Project 4: [Toronto Raptors Performance vs Major Rival](https://github.com/olafem/oluwafemi/blob/b6a537dbc044e20baac612acf0429bba59c3fb01/NBA%20Team%20Performance.ipynb)
 
 ---
 ### Hands-on Course Projects
