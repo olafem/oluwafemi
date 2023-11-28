@@ -26,7 +26,7 @@ With a keen eye on Sustainable Development Goal 7, we've contributed to the miss
 
 <img src="images/Sustainable_energy.png"/>
 
-### Project 4: [Toronto Raptors Performance vs Major Rival]()
+### Project 4: [Toronto Raptors Performance vs Major Rival](https://github.com/olafem/oluwafemi/blob/b6a537dbc044e20baac612acf0429bba59c3fb01/NBA%20Team%20Performance.ipynb)
 
 
 
