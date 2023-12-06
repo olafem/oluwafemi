@@ -1,4 +1,33 @@
--- Optimizing Inventory and Operations: A Data-Driven Approach for Mint Classics
+-- -----------------------------    Optimizing Inventory and Operations: A Data-Driven Approach for Mint Classics  ---------------------------------------------------------
+
+/*
+-- -------------------------------------  Business Scenario at Mint Classics Company ------------------------------------------------------------- 
+
+Mint Classics Company, a retailer of classic model cars and other vehicles, is looking at closing one of their storage facilities. 
+To support a data-based business decision, they are looking for suggestions and recommendations for reorganizing or reducing inventory, 
+while still maintaining timely service to their customers. For example, they would like to be able to ship a product to a customer within 24 hours of the order being placed.
+I have been asked to use MySQL Workbench to familiarize myself with their general business by examining the current data. 
+The data model and sample data tables were provided by Mint Classcs Company for my review. 
+My job is to isolate and identify those parts of the data that could be useful in deciding how to reduce inventory and provide answers to questions like these:
+
+1) Where are items stored and if they were rearranged, could a warehouse be eliminated?
+
+2) How are inventory numbers related to sales figures? Do the inventory counts seem appropriate for each item?
+
+3) Are we storing items that are not moving? Are any items candidates for being dropped from the product line?
+
+The answers to questions will help formulate suggestions and recommendations for reducing inventory with the goal of closing one of the storage facilities. 
+
+*/
+/* ----------------------------- Project Objectives -----------------------------------------------
+
+1. Explore products currently in inventory.
+
+2. Determine important factors that may influence inventory reorganization/reduction.
+
+3. Provide analytic insights and data-driven recommendations.
+
+*/
 
 CREATE DATABASE  IF NOT EXISTS `mintclassics` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `mintclassics`;
@@ -309,19 +338,18 @@ UNLOCK TABLES;
 -- Dump completed on 2023-03-06 15:46:11
 
 
---
--- Data Analysis 
---
 
--- Let's start by retrieving the basic product information in the Mints inventory.
+/* --------------------------------------------------------- Data Analysis -------------------------------------------------  */
+
+-- Let's start by retrieving the basic product information in the Mints Classics inventory.
 SELECT 
     productCode, productName, productLine, warehouseCode, quantityInStock
 FROM
     products
-order by warehouseCode;
--- There are a total of 109 unique type of products. The last row has Null values.    
+ORDER BY warehouseCode;
+-- There are a total of 109 unique type of products. The last row has Null values.
 
--- To identify where items are stored as well as analyze relationship between inventory and sales
+-- To identify where items are stored as well as analyze relationship between inventory and sales.
 -- We want to explore how inventory numbers are related to sales figures.
 SELECT 
     p.productCode,
@@ -341,8 +369,9 @@ FROM
     orderdetails o ON p.productCode = o.productCode
 ORDER BY totalSales ASC;
 
--- We can see from the above query that the 1982 Lamborghini Diablo stored in the East warehouse has a high inventory count and the lowest sales amount. 
--- In most of the cases the order counts for each item justify the sales figure.
+-- We can see from the above query that some products such as the 1932 Model A Ford J-Coupe and the 1982 Lamborghini Diablo exhibit 
+-- a significant disparity between its high inventory count and notably low sales. This warrants further investigation into potential factors affecting its sales performance.. 
+-- In some cases the correlation between inventory and sales seems rational, with order counts aligning with sales figures. 
 
 -- Total Sales by products and product line
 SELECT 
@@ -376,11 +405,10 @@ FROM
     orderdetails o ON p.productCode = o.productCode
 group by p.productLine
 ORDER BY totalSales DESC;
-
 -- The trains product line has the least sales while classic cars sales dominate the productline.
 
 
--- Next will be to determine the rate of sales.
+-- Next will be to determine the rate of sales to identify items that are not moving.
 -- First to identify slow-moving items. Are we storing items that are not moving? Are any items candidates for being dropped from the product line?
 SELECT
 	p.productCode,
@@ -396,8 +424,8 @@ FROM
 
 -- Obviously no item meet the above criteria of having no sales, next we set a threshold to determine which items are slow-moving.
     
--- Identify slow-moving items based on a minimum percentage threshold of 50% sales rate of quantity in stock versus quantity ordered.
--- 
+-- Identify slow-moving items based on a minimum percentage threshold of 20% rate of sales.
+
 SELECT 
     p.productCode,
     p.productName,
@@ -405,7 +433,7 @@ SELECT
     o.orderNumber,
     sum(o.quantityOrdered) as totalItemOrdered,
     CASE
-        WHEN (sum(o.quantityOrdered) / (p.quantityInStock + o.quantityOrdered)) * 100 <= 20 THEN 'Slow-Moving'
+        WHEN (sum(o.quantityOrdered) / (p.quantityInStock)) * 100 <= 20 THEN 'Slow-Moving'
         ELSE 'Not Slow-Moving'
     END AS MovementStatus
 FROM
@@ -427,31 +455,36 @@ FROM
     products p
 JOIN
     orderdetails o ON p.productCode = o.productCode
+JOIN
+	warehouses w ON p.warehouseCode = w.warehouseCode
 GROUP BY
     productName
 HAVING
-    (SUM(o.quantityOrdered) / (p.quantityInStock + SUM(o.quantityOrdered))) * 100 <= 20;
+    (SUM(o.quantityOrdered) / (p.quantityInStock)) * 100 <= 20;
 
+-- A total of 58 out of the 109 items are identified as slow-moving based on our threshold of 20% sales rate.
+
+-- Let us look at the slow-moving items and which warehouses they are stored to identify the potential warehouse for shutdown.
 -- Warehouses with their total number of slow-moving products. East warehouse has the highest number of slow-moving products.
 SELECT 
 	w.warehouseCode,
     warehouseName,
 	SUM(o.quantityOrdered) AS totalItemOrdered,
     'Slow-Moving' AS MovementStatus
-FROM
-	warehouses w
-    JOIN 	
-    products p on w.warehouseCode = p.warehouseCode
+FROM	
+    products p 
 	JOIN
     orderdetails o ON p.productCode = o.productCode
+    JOIN
+    warehouses w on p.warehouseCode = w.warehouseCode
 GROUP BY
     warehouseName
 HAVING
-    (SUM(o.quantityOrdered) / (SUM(p.quantityInStock) + SUM(o.quantityOrdered))) * 100 <= 20
+    (SUM(o.quantityOrdered) / SUM(p.quantityInStock)) * 100 <= 20
 ORDER BY totalItemOrdered DESC;
-        
+
 -- The warehouse that has the highest number of slow-moving items should potentially be the candidate for a shutdown.
--- To identify which warehouse to potentially shutdown, one can also analyze the current inventory distribution and identify the  warehouse with the least activity. 
+-- To identify which warehouse to shutdown, one can also analyze the current inventory distribution and identify the warehouse with the least activity. 
 -- Here's a query that considers the total quantity of items in each warehouse:
 -- This query suggests which warehouse to shutdown based on total quantity of products in each warehouse
 
@@ -463,12 +496,16 @@ FROM
 GROUP BY w.warehouseName
 ORDER BY TotalQuantity DESC;
 
--- Based on the 2 approaches for calculation, we can clearly see that the warehouse located in the East is a potential candidate and is recommended for shutdown.
--- Reason is because this warehouse has the highest inventory of slow-moving items. 
 
--- Additional Insights:
--- To further provide an insight, we can observe that all Classic Cars, totalling over 200,000 cars, are located in the East Warehouse, which is recommended for shutdown.  
--- Additionally, the Classic Cars product line has the highest sales among all the product lines. Therefore, there is a potential opportunity to rearrange the other three warehouses to accommodate the Classic Cars product line.
+-- Utilizing two criteria for the shutdown recommendation, 
+-- the East warehouse emerges as a potential candidate due to having the highest inventory of slow-moving items. 
+-- As a result, it is advised for shutdown consideration. 
+
+/* --------------------------------- Additional Insights: ------------------------------------------------------------------
+1. Further insight reveals that the East Warehouse, recommended for shutdown, houses all Classic Cars, totaling over 200,000 units. 
+ Notably, the Classic Cars product line boasts the highest sales across all categories. 
+ This presents a unique opportunity to optimize storage costs by redistributing the Classic Cars product line among the remaining three warehouses, 
+ alleviating the burden of slow-moving cars in the East Warehouse slated for closure. */
 SELECT 
    productLine, p.quantityInStock, warehouseName
 FROM
@@ -478,7 +515,7 @@ FROM
 WHERE
     productLine LIKE 'Classic Cars';
     
-    
+-- -------------------------Stocking Inventory Based on Popularity ---------------------------------------
 -- Classify products based on their popularity and adjust inventory management dynamically.
 SELECT
 	p.productCode, p.productName,
@@ -518,7 +555,7 @@ FROM
     JOIN orderdetails o ON p.productCode = o.productCode) AS PopularityData
 GROUP BY warehouseName , PopularityClassification;
 
-
+-- 3. -------------------------------- Adjust Inventory Levels Based on the Average Monthly Sales -----------------------------------------------
 -- Calculate average monthly sales for each product.
 -- This will help with sales forecasting and to anciticipate demand fluctuations.
 -- The business can adjust inventory levels based on forecasted sales.
@@ -536,8 +573,9 @@ FROM
     orders os ON o.orderNumber = os.orderNumber
 GROUP BY productName;
 
--- Analyze sales by region to optimize inventory distribution.
--- Regions with high sales such as Madrid and San Rafael should be considered when stocking inventory to align with their demand.
+
+-- 4. ------------------------------------- Analyze sales by region to optimize inventory distribution ------------------------------------
+-- Countries with high sales such as USA and Spain should be considered when stocking inventory to align with their demand.
 SELECT 
     c.country,
     SUM(o.quantityOrdered) AS SalesAmount
@@ -550,6 +588,7 @@ FROM
 GROUP BY c.country
 ORDER BY SalesAmount DESC;
 
+-- 5 ----------------------------- Inventory based on Customer Segmentation ------------------------------------------------------
 -- Classify customers into segments based on their purchasing history
 -- Segment customers based on purchasing behavior and tailor inventory strategies accordingly. 
 -- Customize inventory levels for different customer segments. Prioritize stock for frequent and regular buyers.
@@ -568,9 +607,19 @@ FROM
     orders
 GROUP BY customerNumber;
 
+/* -------------------------------------------------- Conclusion --------------------------------------------------------
+
+In conclusion, this data analysis project for Mint Classics involved a comprehensive exploration of inventory and sales data. 
+Through SQL queries, we identified slow-moving items, recommended a warehouse for shutdown based on slow-moving inventory, 
+and provided additional insights, including redistributing the Classic Cars product line. 
+We also proposed dynamic inventory adjustments based on popularity classification, average monthly sales, and customer segmentation. 
+This multi-faceted approach aims to optimize inventory management, enhance sales forecasting, 
+and tailor strategies for different customer segments, contributing to more informed business decisions.
+*/
+
 -- Link to Tableau below:
 
--- https://public.tableau.com/app/profile/oluwafemi.olawale/viz/OptimizingInventoryandOperationsAData-DrivenApproachforMintClassics/Dashboard1
+/* https://public.tableau.com/app/profile/oluwafemi.olawale/viz/OptimizingInventoryandOperationsAData-DrivenApproachforMintClassics/Dashboard1  */
 
 
 
