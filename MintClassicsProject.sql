@@ -570,7 +570,7 @@ GROUP BY customerNumber;
 
 -- Link to Tableau below:
 
-/* https://public.tableau.com/app/profile/oluwafemi.olawale/viz/OptimizingInventoryandOperationsAData-DrivenApproachforMintClassics/Dashboard1  */
+ (Tableau Link here)[https://public.tableau.com/app/profile/oluwafemi.olawale/viz/OptimizingInventoryandOperationsAData-DrivenApproachforMintClassics/Dashboard1]
 
 
 
