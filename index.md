@@ -6,6 +6,8 @@
 
 Project 1: [Optimizing Inventory and Operations: A Data-Driven Approach for Mint Classics](https://github.com/olafem/oluwafemi/blob/9a9e5b625417671637c21bc167093f0d2c1ccbc5/MintClassicsProject.sql)
 
+https://github.com/olafem/oluwafemi/blob/68c3143ddf87353778aa6a6df75a6a862a83e40d/images/mintpopularity.JPG
+
 Project 2: [Predictive Modeling of THC Values Based on CBN Results for Distillates](https://github.com/olafem/oluwafemi/blob/c32429bb402554680e5c26cda5d8d1f7cf74e2c7/distillate-potency-prediction%20(2).ipynb)
 
 [Kaggle link here](https://www.kaggle.com/code/femiolawale/distillate-potency-prediction?scriptVersionId=145139556)
