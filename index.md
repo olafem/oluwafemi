@@ -4,23 +4,25 @@
 
 ### Data Science 
 
-Project 1: [Predictive Modeling of THC Values Based on CBN Results for Distillates](https://github.com/olafem/oluwafemi/blob/c32429bb402554680e5c26cda5d8d1f7cf74e2c7/distillate-potency-prediction%20(2).ipynb)
+Project 1: [Optimizing Inventory and Operations: A Data-Driven Approach for Mint Classics](https://github.com/olafem/oluwafemi/blob/9a9e5b625417671637c21bc167093f0d2c1ccbc5/MintClassicsProject.sql)
+
+Project 2: [Predictive Modeling of THC Values Based on CBN Results for Distillates](https://github.com/olafem/oluwafemi/blob/c32429bb402554680e5c26cda5d8d1f7cf74e2c7/distillate-potency-prediction%20(2).ipynb)
 
 [Kaggle link here](https://www.kaggle.com/code/femiolawale/distillate-potency-prediction?scriptVersionId=145139556)
 <img src="images/potency_modelling.png"/>
 
 ---
-Project 2: [Winning Space Race with Data Science](https://github.com/olafem/oluwafemi/blob/master/SpaceX%20Capstone%20Project_Femi.pdf)
+Project 3: [Winning Space Race with Data Science](https://github.com/olafem/oluwafemi/blob/master/SpaceX%20Capstone%20Project_Femi.pdf)
 <img src="images/Space_race.png"/>
 
 ---
-Project 3: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://github.com/olafem/oluwafemi/blob/90815506df26058b31007e901f986a0025c7e2a4/global-sustainable-energy%20(1).ipynb)
+Project 4: [Empowering the Future: Navigating Global Sustainability with Data-Driven Insights](https://github.com/olafem/oluwafemi/blob/90815506df26058b31007e901f986a0025c7e2a4/global-sustainable-energy%20(1).ipynb)
 
 [Kaggle link here](https://www.kaggle.com/code/femiolawale/global-sustainable-energy)
 <img src="images/99q98owg.png"/>
 
 ---
-Project 4: [Toronto Raptors Performance vs Major Rival](https://github.com/olafem/oluwafemi/blob/b6a537dbc044e20baac612acf0429bba59c3fb01/NBA%20Team%20Performance.ipynb)
+Project 5: [Toronto Raptors Performance vs Major Rival](https://github.com/olafem/oluwafemi/blob/b6a537dbc044e20baac612acf0429bba59c3fb01/NBA%20Team%20Performance.ipynb)
 
 ---
 ### Hands-on Course Projects
