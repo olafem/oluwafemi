@@ -440,7 +440,7 @@ SELECT
     'Slow-Moving' AS MovementStatus
 FROM
 	warehouses w
-    join 	
+    JOIN 	
     products p on w.warehouseCode = p.warehouseCode
 	JOIN
     orderdetails o ON p.productCode = o.productCode
@@ -525,27 +525,30 @@ GROUP BY warehouseName , PopularityClassification;
 SELECT 
     p.productCode,
     p.productName,
+    os.orderDate,
     p.quantityInStock,
-    round(avg(o.quantityOrdered),1) as AvgMonthlySales
+    ROUND(AVG(o.quantityOrdered), 1) AS AvgMonthlySales
 FROM
     products p
         JOIN
     orderdetails o ON p.productCode = o.productCode
+        JOIN
+    orders os ON o.orderNumber = os.orderNumber
 GROUP BY productName;
 
 -- Analyze sales by region to optimize inventory distribution.
 -- Regions with high sales such as Madrid and San Rafael should be considered when stocking inventory to align with their demand.
 SELECT 
-    c.city,
-    SUM(o.quantityOrdered) AS TotalSales
+    c.country,
+    SUM(o.quantityOrdered) AS SalesAmount
 FROM
     orderdetails o
         JOIN
     orders os ON o.orderNumber = os.orderNumber
         JOIN
     customers c ON os.customerNumber = c.customerNumber
-GROUP BY c.city
-ORDER BY TotalSales DESC;
+GROUP BY c.country
+ORDER BY SalesAmount DESC;
 
 -- Classify customers into segments based on their purchasing history
 -- Segment customers based on purchasing behavior and tailor inventory strategies accordingly. 
@@ -565,6 +568,9 @@ FROM
     orders
 GROUP BY customerNumber;
 
+-- Link to Tableau below:
+
+/* https://public.tableau.com/app/profile/oluwafemi.olawale/viz/OptimizingInventoryandOperationsAData-DrivenApproachforMintClassics/Dashboard1  */
 
 
 
