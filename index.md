@@ -5,6 +5,7 @@
 ### Data Science 
 
 Project 1: [Optimizing Inventory and Operations: A Data-Driven Approach for Mint Classics](https://github.com/olafem/oluwafemi/blob/9a9e5b625417671637c21bc167093f0d2c1ccbc5/MintClassicsProject.sql)
+[View the Tableau dashboard here](https://public.tableau.com/app/profile/oluwafemi.olawale/viz/OptimizingInventoryandOperationsAData-DrivenApproachforMintClassics/Dashboard1?publish=yes)
 
 <img src="images/mintpopularity.JPG"/>
 
