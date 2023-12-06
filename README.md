@@ -1,6 +1,6 @@
 ## Femi's Portfolio
 
-### Project 1: [Optimizing Inventory and Operations: A Data-Driven Approach for Mint Classics](https://github.com/olafem/oluwafemi/blob/bbcbf132dd20d3ec36fe1926be3f990492159c2f/MintClassicsProject.sql)
+### Project 1: [Optimizing Inventory and Operations: A Data-Driven Approach for Mint Classics](https://github.com/olafem/oluwafemi/blob/3960389750edc0addb0327cfa85c1cb61ca91810/MintClassicsProject.sql)
 Overview
 - This project undertook a comprehensive data analysis at Mint Classics, focusing on inventory optimization and operational efficiency. Leveraging SQL queries and Tableau visualizations, we delved into product details, sales patterns, and customer behaviors. Key insights include the identification of slow-moving items, warehouse shutdown recommendations, and customer segmentation based on purchasing history. By combining data-driven recommendations with actionable visualizations, our approach empowers Mint Classics to make informed decisions, streamline operations, and enhance overall business performance.
 
