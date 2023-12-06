@@ -4,6 +4,10 @@
 Overview
 - This project undertook a comprehensive data analysis at Mint Classics, focusing on inventory optimization and operational efficiency. Leveraging SQL queries and Tableau visualizations, we delved into product details, sales patterns, and customer behaviors. Key insights include the identification of slow-moving items, warehouse shutdown recommendations, and customer segmentation based on purchasing history. By combining data-driven recommendations with actionable visualizations, our approach empowers Mint Classics to make informed decisions, streamline operations, and enhance overall business performance.
 
+[View the Tableau dashboard here](https://public.tableau.com/app/profile/oluwafemi.olawale/viz/OptimizingInventoryandOperationsAData-DrivenApproachforMintClassics/Dashboard1?publish=yes)
+
+<img src="images/mintpopularity.JPG"/>
+
 
 ### Project 2: [Predictive Modeling of THC Values Based on CBN Results for Distillates](https://github.com/olafem/oluwafemi/blob/87baf3bc385326b2dfbb86bf54aab6d2c7902ffc/distillate-potency-prediction%20(2).ipynb)
 
